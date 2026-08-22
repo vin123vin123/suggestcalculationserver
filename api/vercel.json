@@ -1,15 +1,12 @@
 {
   "version": 2,
+  "cleanUrls": true,
   "builds": [
-    {
-      "src": "api/calculate.js",
-      "use": "@vercel/node"
-    }
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "api/calculate.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/api/calculate",
-      "dest": "api/calculate.js"
-    }
+    { "src": "/api/calculate", "dest": "api/calculate.js" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
