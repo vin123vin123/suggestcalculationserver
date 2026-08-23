@@ -1,4 +1,4 @@
-{"name":"calculator","version":"1.0.0","main":"api/calculate.js","engines":{"node":"20.x"},
+echo {"name":"calculator","version":"1.0.0","main":"api/calculate.js","engines":{"node":"20.x"},
 "scripts": {
     "start": "node api/calculate.js"
 }
